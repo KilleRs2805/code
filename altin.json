@@ -1,0 +1,20 @@
+[
+    {
+        "kodlar": {
+            "Spotfiy Apk": {
+                "isim": "Spotfiy Apk",
+                "id": "spotfiypcapk",
+                "desc": "Spotfiy'da Müzik Dinlerken Karşınıza Reklam Cıkmaz. Pc için uyumludur.",
+                "modules": [
+                    "Modül Yok"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/547073075317833738/32943b1b9d96d36e8b3d37169c20521a.png",
+                "main_code": "Apk link : http://s6.dosya.tc/server2/52he1c/Spotify.rar.html",
+                "komutlar_code": "Apk link : http://s6.dosya.tc/server2/52he1c/Spotify.rar.html",
+                "kod_rank": "altin",
+                "k_adi": "El_VangHockBey",
+                "date": "5/29/2021"
+            }
+        }
+    }
+]

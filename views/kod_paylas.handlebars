@@ -1,0 +1,50 @@
+<title>Equesferrum Code - Kod Paylaş</title>
+<main>
+  <div class="container">
+    <h1 class="text-center">
+      Equesferrum Kod Paylaşım
+    </h1>
+
+<title>Background-</title>
+	<style>
+		body {
+			background: url(https://cdn.discordapp.com/attachments/846653378812706816/848095685534023700/thumb-1920-1044373.jpg) no-repeat fixed;
+			background-size: 100%;
+		}
+	</style>
+
+
+  <a class="btn">Eğer TROLL Amaçlı veya Kod Dışında Bir Şey Paylaşılırsa Sunucuda "Paylaşım Yapamaz" Rolü Alırsınız.</a>
+    <hr>
+    <div class="">
+      <form action="paylasim" method="POST">
+    <div class="input-group">
+      <input type="text" class="form-control" name="kod_adi" placeholder="Kodun Adı" required>
+      <div class="input-group-append">
+        <select class="custom-select text-white dark" name="kod_rank" id="rank_choice" required>
+          <option value="normal">Normal</option>
+          <option value="altin">Altın</option>
+          <option value="elmas">Elmas</option>
+          <option value="hazir">AltYapılar</option>
+          <option value="sistemler">Sistemler</option>
+        </select>
+      </div>
+    </div><br>
+      <input type="text" class="form-control" name="desc" placeholder="Kodun Açıklaması" required><br>
+      <input type="text" class="form-control" name="modules" placeholder="Gerekli Modüller (',' ile ayırın)" required><br>
+      <input type="text" class="form-control" name="author" placeholder="Kodu Yazan Kişiler (',' ile ayırın)" required><br>
+  <a class="form-control">Sizin İd'niz : {{user.id}}</a>
+      <p class="h3">
+        Kodun Main Dosyası Buraya:
+      </p>
+      <textarea class="form-control" name="main_code" id="main_code" rows="20" placeholder="Kodunuzun Main Dosyasını Buraya Girin" required></textarea>
+      <p class="h3">
+        Komutlar Klasörüne Atılacak Dosya Buraya:
+      </p>
+      <textarea class="form-control" name="komutlar_code" id="komutlar_code" rows="20" placeholder="Komutlar Klasörüne Atılacak Dosya Buraya" required></textarea><br>
+      <input type="text" class="form-control" name="k_adi" value="{{user.username}}" required READONLY hidden><br>
+      <button type="submit" class="bttn dark btn-small btn-white">Paylaş</button>
+    </form>
+    </div>
+  </div>
+</main>

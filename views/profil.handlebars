@@ -1,0 +1,69 @@
+<title>Equesferrum Code | {{member.user.username}}</title> <br><br> <div class="container">
+    <div>
+
+<title>Background-</title>
+	<style>
+		body {
+			background: url(https://cdn.discordapp.com/attachments/846653378812706816/848095685534023700/thumb-1920-1044373.jpg) no-repeat fixed;
+			background-size: 100%;
+		}
+	</style>
+
+      <center>
+      <a href="https://discordapp.com/users/{{member.user.id}}" class="twPc-avatarLink">
+        <img alt="Avatar" src="{{avatarURL}}" class="twPc-avatarImg">
+      </a>
+      <div class="twPc-divUser">
+        <div class="twPc-divName">
+          {{member.user.username}}
+        </div>
+
+        
+        <div class="twPc-divStats">
+        <ul class="twPc-Arrange">
+          <a href="/normal" style="text-decoration:none" class="bttn dark"><i class="fas fa-code"></i> Normal Kodlar</a>
+          {{#if perms.yetkili}}
+       <a href="/altin"  style="text-decoration:none" class="bttn dark"><i class="fas fa-code"></i> Altın Kodlar</a>
+       <a href="/elmas" style="text-decoration:none" class="bttn dark"><i class="fas fa-code"></i> Elmas Kodlar</a>
+       <a href="/hazir" style="text-decoration:none" class="bttn dark"><i class="fas fa-code"></i> Hazır Sistemler</a>
+          {{else}}
+            {{#if perms.destekçi}}
+            <a href="/altin"  style="text-decoration:none" class="bttn dark"><i class="fas fa-code"></i> Altın Kodlar</a>
+            <a href="/elmas" style="text-decoration:none" class="bttn dark"><i class="fas fa-code"></i> Elmas Kodlar</a>
+            <a href="/hazir" style="text-decoration:none" class="bttn dark"><i class="fas fa-code"></i> Hazır Sistemler</a>
+            {{else}}
+              {{#if perms.altin}}
+            <a href="/altin"  style="text-decoration:none" class="bttn dark"><i class="fas fa-code"></i> Altın Kodlar</a>
+              {{/if}}
+              {{#if perms.elmas}}
+            <a href="/elmas" style="text-decoration:none" class="bttn dark"><i class="fas fa-code"></i> Elmas Kodlar</a>
+              {{/if}}
+              {{#if perms.hazir}}
+           <a href="/hazir" style="text-decoration:none" class="bttn dark"><i class="fas fa-code"></i> Hazır Sistemler</a>
+              {{/if}}
+            {{/if}}
+          {{/if}}  
+        </ul>
+      </div>
+        
+<hr>
+                <span>
+          {{#if perms.yetkili}}
+           <a class="btn">Kod Paylaşım Yetkilisi </a>
+          {{else}}
+            {{#if perms.destekçi}}
+           <a class="btn">Equesferrum Code Destekçisi</a>
+            {{else}}
+           <a class="btn">Kullanıcı</a>
+            {{/if}}
+          {{/if}}
+        </span>
+    </div>
+        
+<div class="">
+  <a class="btn">Paylaştığı Kodlar <font color="#0069d9">&</font> Yardım Ettiği Kodlar ( <font color="#0069d9">{{#if stats}} {{stats.paylasilan}} {{/if}} </font> )</a>
+</div>
+
+  </div>
+      </center>
+</div>
